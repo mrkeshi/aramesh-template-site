@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آرامش نارنجی</title>
+    
+    <link rel="stylesheet" href="../dist/style.css">
+    <style>
+article:last-child{
+    margin-bottom: 0;
+}
+ p{
+line-height: 32px !important ;
+  }
+/* bars */
+
+/* Responsive */
+
+@media only screen and (max-width:768px) {
+  header ul li {
+    margin: 5px;
+    width: 100%;
+  }
+  .bodyPost{
+    padding: 0 3px;
+  }
+  p{
+ 
+line-height: 28px !important ;
+  }
+footer{
+    padding-right: 5px;
+}
+  .btns{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .my-btn{
+    font-size: 14.5x;
+    height: auto;
+    width: auto;
+    padding: 11px 16px;
+    text-align: center;
+  }
+  .btns a{
+    margin: 5px;
+  }
+.childparent{
+    z-index: 20;
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+.menu nav{
+    margin-right: 15px;
+}
+.blogs .post{
+ 
+}
+  .menu{
+z-index: 10;
+ padding: 5px 10px;
+    top: 61px;
+    height: 240px;
+    transition: all 0.6s ease-in;
+    background-color: #ff4c60;
+  }
+
+  .close{
+    top: -250px;
+}
+  .menu ul li a{
+    color: #fff;
+  }
+  .menu ul li{
+    margin: 10px 0;
+  } 
+   .menu ul li:hover{
+    margin: 10px 0;
+    color: #454360;
+  }
+  .random-c a{
+    margin: 5px 5px;
+    font-size: 14px;
+  }
+  header nav ul{
+    height: 400px;
+    
+  }
+  .post .header a.bg-my-6{
+    margin:  0 auto;
+    margin-bottom: 14px;
+  }
+  
+}
+
+.container1 {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 31px;
+  height: 4px;
+  background-color: #4b4870;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 6px) ;
+  transform: rotate(-45deg) translate(-7px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* end bars */
+        .random-c{
+            display: flex;
+            flex-wrap: wrap;
+    
+        }
+        .title::first-letter {
+            color: #ff4c60;
+        }
+
+        .ites {
+            position: relative;
+        }
+
+        .border-my {
+            height: 2px;
+            background: #ff4c60;
+            content: '';
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            margin-left: 40px;
+            min-width: 18px;
+            margin-right: 17px;
+            display: block;
+        }
+
+        .ites::before {
+            content: ' ';
+            border: 2px solid #fff;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            right: 2px;
+            bottom: 2px;
+            z-index: 5;
+            -webkit-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+        }
+
+.my-btn:hover:before{
+    opacity: 1;
+}
+.my-btn{
+ 
+}
+.my-btn::before{
+            content: ' ';
+            border: 2px solid #fff;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            right: 2px;
+            bottom: 2px;
+            z-index: 5;
+            -webkit-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+            opacity: 0;
+}
+        .archive>li::before {
+            content: '■';
+            color: #ff4c60;
+            margin-right: 0px;
+            font-size: 20px;
+            vertical-align: middle;
+            display: inline-block;
+            margin-top: -1px;
+            margin-left: 7px;
+        }
+        .ites{
+            transition:all 0.3s ease-in;
+        }
+    
+        .ites:hover:before{
+           transform: rotate(90deg);
+        }
+       .box-aut{
+        transition: all 0.4s ease;
+       }
+       .box-aut:hover>.text-16{
+color: #ff4c60;
+       }
+   
+    </style>
+</head>
+
+<body class="bg-my-4">
+
+    <!-- rose 700  and Indigo 900-->
+    <div class="container mx-auto">
+    
+        <header >
+            <div id="parent" class="parent md:bg-my-4 bg-white transition-all relative    md:h-auto h-16 md:shadow-none	shadow-md  mb-12 my-0 md:flex-col  flex-row md:justify-center space-around flex items-center  ">
+            
+                <div class="md:mt-12 md:flex hidden mt-0  justify-center ">                    
+                    <a href="#" class="text-4xl   md:text-5xl lg:text-6xl transition-all hover:bottom-2 bottom-0 relative  title text-my-1 font-black">عشق ما</a>
+                </div>
+                <span class="text-3xl absolute z-30 top-3 right-3 cursor-pointer mx-2 md:hidden block">
+                    <div class="container" onclick="Menu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                      </div>
+                  </span>
+                
+                <div class="menu w-full close shadow-2xl md:static absolute md:shadow-none  " id="menu"  >
+                    <nav class="md:h-12  md:bg-white  mx-auto md:shadow-md  md:w-1/2 w-8/12 md:mt-10 m-0" >
+                                  
+                        <ul class=" flex md:justify-center md:flex-row flex-col md:items-center h-full px-1">
+                         
+                            <li class="mx-6">
+                                <a href="#" class="text-my-1 font-semibold text-15 hover:text-my-3 transition-all"> خانه</a>
+                            </li>
+                            <li class="mx-6">
+                                <a href="#" class="text-my-1 font-semibold hover:text-my-3 transition-all text-15">آرشیو</a>
+                            </li>
+                            <li class="mx-4">
+                                <a href="#" class="text-my-1 font-semibold hover:text-my-3 transition-all text-15">نوشته ها </a>
+                            </li>
+                            <li class="mx-6">
+                                <a href="#" class="text-my-1 font-semibold hover:text-my-3 transition-all text-15">پروفایل</a>
+                            </li>
+                            <li class="mx-6">
+                                <a href="#" class="text-my-1 font-semibold hover:text-my-3 transition-all text-15"> # طراح </a>
+                            </li>
+                        </ul>
+                
+                    </nav>
+                </div>
+                <div class="childparent ">
+                    <div class="md:mt-12 md:hidden absolute top-3 left-3 flex mt-0  justify-center ">
+                        <a href="#" class="text-2xl   md:hidden block transition-all hover:bottom-2 bottom-0 relative  title text-my-1 font-black">عشق ما</a>
+                    </div>
+                </div>
+              
+            </div>
+      
+   
+  
+  
+        </header>
+        <main>
+            <div class="flex justify-between pt-4 flex-wrap lg:flex-nowrap relative" >
+
+
+                <div class="blogs lg:w-2/3 w-full justify-center flex flex-col md:px-10 md:px-3 px-2 mb-8	">
+                    <article class=" w-full   mb-16   ">
+                        <div class="post bg-white md:py-12 md:px-10 px-2 py-4 w-full shadow-xl relative">
+                            <div class="header flex w-full md:items-center md:flex-row flex-col md:mt-0 mt-4 flex-start flex ">
+                                <a href="#"
+                                     class="bg-my-6   ites md:w-32 md:h-32  flex items-center justify-center text-white md:text-7xl h-24	w-24 text-4xl">
+                                    ک
+                            </a>
+
+                                <div class="info md:mr-8 text-center md:text-right">
+
+                                    <a href="#" class="md:text-3xl text-base transition-all hover:text-my-3 tit	text-my-1 font-black ">علی دیگه مست نیست ماریان!</a>
+                                    <div class="meta mt-3">
+                                        <time class="text-my-5 md:text-15 text-sm	">۲۴ مرداد ۱۳۹۸</time>
+                                        <span class="text-my-6  bg-my-6 mx-2  inline-flex w-4 h-1"> </span>  <a href="#"
+                                            class="text-my-6 md:text-15 text-sm	"> ۲ نظر</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="bodyPost">
+                                <p class="text-my-5 mt-4 md:mt-5 md:text-17 text-sm text-center md:text-right" >
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد...
+                                </p>
+                            </div>
+                            <div class="footerPost md:flex-nowrap flex-wrap flex justify-center md:justify-between justify-end   md:mt-8 mt-4 mb-8 md:mb-4	 ">
+                                <div class="random-c ">
+                                    <a href="#" class="p-2 m-2 relative bottom-0 hover:bottom-2 transition-all bg-white text-15 shadow-2xl text-my-1 ">برچسپ</a>
+                                    <a href="#" class="p-2 m-2 relative bottom-0 hover:bottom-2 transition-all bg-white text-15 shadow-2xl text-my-1 ">برچسپ</a>
+                                    <a href="#" class="p-2 m-2 relative bottom-0 hover:bottom-2 transition-all bg-white text-15 shadow-2xl text-my-1 ">برچسپ</a>
+
+                                  
+                                </div>
+                                <div class=" flex items-center  mt-3 md:mt-0">
+                                    <a href="#" class="flex items-center box-aut">
+                                        <span class=" bg-my-3 rounded-full md:w-8 md:h-8 w-7 h-7 text-xl text-white flex justify-center items-center">پ</span>
+                                    <span href="#" class="text-my-5 md:text-16 text-15 transition-all  mx-2 aut">علیرضا کشاورز</a>
+                                    </span>
+                                   
+
+                                </div>
+                            </div>
+                            <a href="#" style="bottom:-20px ;left: 50%; transform: translate(-50%, 0);"
+                                class="w-32 h-12 flex items-center my-btn absolute  justify-center  text-center text-white absolute  bg-my-1">
+                                 خواندن</a>
+                        </div>
+                    </article>
+                    <article class=" w-full   mb-16   ">
+                        <div class="post bg-white md:py-12 md:px-10 px-2 py-4 w-full shadow-xl relative">
+                            <div class="header flex w-full md:items-center md:flex-row flex-col md:mt-0 mt-4 flex-start flex ">
+                                <a href="#"
+                                     class="bg-my-6   ites md:w-32 md:h-32  flex items-center justify-center text-white md:text-7xl h-24	w-24 text-4xl">
+                                    ک
+                            </a>
+
+                                <div class="info md:mr-8 text-center md:text-right">
+
+                                    <a href="#" class="md:text-3xl text-base transition-all hover:text-my-3 tit	text-my-1 font-black ">آزادی فهم بود نه منفعت</a>
+                                    <div class="meta mt-3">
+                                        <time class="text-my-5 md:text-15 text-sm	">۲۴ مرداد ۱۳۹۸</time>
+                                        <span class="text-my-6  bg-my-6 mx-2  inline-flex w-4 h-1"> </span>  <a href="#"
+                                            class="text-my-6 md:text-15 text-sm	"> ۲ نظر</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="bodyPost">
+                                <p class="text-my-5 mt-4 md:mt-5 md:text-17 text-sm text-center md:text-right">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد...
+                                </p>
+                            </div>
+                            <div class="footerPost md:flex-nowrap flex-wrap flex justify-center md:justify-between justify-end   md:mt-8 mt-4 mb-8 md:mb-4	 ">
+                                <div class="random-c ">
+                                    <a href="#" class="p-2 m-2 relative bottom-0 hover:bottom-2 transition-all bg-white text-15 shadow-2xl text-my-1 ">برچسپ</a>
+                                    <a href="#" class="p-2 m-2 relative bottom-0 hover:bottom-2 transition-all bg-white text-15 shadow-2xl text-my-1 ">برچسپ</a>
+                                    <a href="#" class="p-2 m-2 relative bottom-0 hover:bottom-2 transition-all bg-white text-15 shadow-2xl text-my-1 ">برچسپ</a>
+
+                                  
+                                </div>
+                                <div class=" flex items-center  mt-3 md:mt-0">
+                                    <a href="#" class="flex items-center box-aut">
+                                        <span class=" bg-my-3 rounded-full md:w-8 md:h-8 w-7 h-7 text-xl text-white flex justify-center items-center">پ</span>
+                                    <span href="#" class="text-my-5 md:text-16 text-15 transition-all  mx-2 aut">علیرضا کشاورز</a>
+                                    </span>
+                                   
+
+                                </div>
+                            </div>
+                            <a href="#" style="bottom:-20px ;left: 50%; transform: translate(-50%, 0);"
+                                class="w-32 h-12 flex items-center my-btn absolute  justify-center  text-center text-white absolute  bg-my-1">
+                                 خواندن</a>
+                        </div>
+                    </article>
+                        <article class=" w-full   mb-16   ">
+                        <div class="post bg-white md:py-12 md:px-10 px-2 py-4 w-full shadow-xl relative">
+                            <div class="header flex w-full md:items-center md:flex-row flex-col md:mt-0 mt-4 flex-start flex ">
+                                <a href="#"
+                                     class="bg-my-6   ites md:w-32 md:h-32  flex items-center justify-center text-white md:text-7xl h-24	w-24 text-4xl">
+                                    ک
+                            </a>
+
+                                <div class="info md:mr-8 text-center md:text-right">
+
+                                    <a href="#" class="md:text-3xl text-base transition-all hover:text-my-3 tit	text-my-1 font-black ">کانگوروی در من میخوابد</a>
+                                    <div class="meta mt-3">
+                                        <time class="text-my-5 md:text-15 text-sm	">۲۴ مرداد ۱۳۹۸</time>
+                                        <span class="text-my-6  bg-my-6 mx-2  inline-flex w-4 h-1"> </span>  <a href="#"
+                                            class="text-my-6 md:text-15 text-sm	"> ۲ نظر</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="bodyPost">
+                                <p class="text-my-5 mt-4 md:mt-5 md:text-17 text-sm text-center md:text-right">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد...
+                                </p>
+                            </div>
+                            <div class="footerPost md:flex-nowrap flex-wrap flex justify-center md:justify-between justify-end   md:mt-8 mt-4 mb-8 md:mb-4	 ">
+                                <div class="random-c ">
+                                    <a href="#" class="p-2 m-2 relative bottom-0 hover:bottom-2 transition-all bg-white text-15 shadow-2xl text-my-1 ">برچسپ</a>
+                                    <a href="#" class="p-2 m-2 relative bottom-0 hover:bottom-2 transition-all bg-white text-15 shadow-2xl text-my-1 ">برچسپ</a>
+                                    <a href="#" class="p-2 m-2 relative bottom-0 hover:bottom-2 transition-all bg-white text-15 shadow-2xl text-my-1 ">برچسپ</a>
+
+                                  
+                                </div>
+                                <div class=" flex items-center  mt-3 md:mt-0">
+                                    <a href="#" class="flex items-center box-aut">
+                                        <span class=" bg-my-3 rounded-full md:w-8 md:h-8 w-7 h-7 text-xl text-white flex justify-center items-center">پ</span>
+                                    <span href="#" class="text-my-5 md:text-16 text-15 transition-all  mx-2 aut">علیرضا کشاورز</a>
+                                    </span>
+                                   
+
+                                </div>
+                            </div>
+                            <a href="#" style="bottom:-20px ;left: 50%; transform: translate(-50%, 0);"
+                                class="w-32 h-12 flex items-center my-btn absolute  justify-center  text-center text-white absolute  bg-my-1">
+                                 خواندن</a>
+                        </div>
+                    <br><br>
+                    <div class="btns mx-auto lg:mt-8 mt-4 mb-12  lg:mb-4 flex justify-center ">
+                        <a href="#" 
+                        class="w-32 mx-2 relative my-btn h-12 flex items-center justify-center  text-center text-white   bg-my-1">
+                       صفحه بعدی</a>                         <a href="#" 
+                        class="w-32 mx-2 relative my-btn h-12 flex items-center  justify-center text-center text-white  bg-my-1">
+                      صفحه قبلی</a>
+                    </div>
+                </div>
+                <div class="asides lg:w-1/3 w-full px-5 mr-4 " style="position:sticky;top:15px" >
+                    <aside>
+                        <div class="relative">
+                            <div class="header-aside flex items-center mb-8  ">
+                                <h1 class="md:text-2xl text-xl text-my-2 font-black ">آخرین پست ها</h1>
+                                <span class="border-my"></span>
+                            </div>
+
+                            <div class="body-aside flex flex-col mb-4 ">
+                                <div class="item rsa post flex">
+                                    <a href="#" class="bg-green-300 ml-2 w-16 h-16 ites  flex items-center justify-center text-white text-3xl">خ</a>
+                                    <div class="info  mr-4">
+                                        <h4 class="text-15 text-my-2 font-black">
+                                            <a href="#" class="tit transition-all hover:text-my-3">دوش دیدم در این میخانه</a>
+                                        </h4>
+                                        <span class="text-my-5 text-sm"> ۴ مرداد ۱۳۹۸</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-aside flex flex-col mb-4 ">
+                                <div class="item rsa post flex">
+                                    <a href="#" class="bg-green-300 ml-2 w-16 h-16 ites  flex items-center justify-center text-white text-3xl">خ</a>
+                                    <div class="info  mr-4">
+                                        <h4 class="text-15 text-my-2 font-black">
+                                            <a href="#" class="tit transition-all hover:text-my-3">دوش دیدم در این میخانه</a>
+                                        </h4>
+                                        <span class="text-my-5 text-sm"> ۴ مرداد ۱۳۹۸</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-aside flex flex-col mb-4 ">
+                                <div class="item rsa post flex">
+                                    <a href="#" class="bg-green-300 ml-2 w-16 h-16 ites  flex items-center justify-center text-white text-3xl">خ</a>
+                                    <div class="info  mr-4">
+                                        <h4 class="text-15 text-my-2 font-black">
+                                            <a href="#" class="tit transition-all hover:text-my-3">دوش دیدم در این میخانه</a>
+                                        </h4>
+                                        <span class="text-my-5 text-sm"> ۴ مرداد ۱۳۹۸</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-aside flex flex-col mb-4 ">
+                                <div class="item rsa post flex">
+                                    <a href="#" class="bg-green-300 ml-2 w-16 h-16 ites  flex items-center justify-center text-white text-3xl">خ</a>
+                                    <div class="info  mr-4">
+                                        <h4 class="text-15 text-my-2 font-black">
+                                            <a href="#" class="tit transition-all hover:text-my-3">دوش دیدم در این میخانه</a>
+                                        </h4>
+                                        <span class="text-my-5 text-sm"> ۴ مرداد ۱۳۹۸</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="relative mt-12">
+                            <div class="header-aside  flex items-center ">
+                                <h1 class="md:text-2xl text-xl text-my-2 font-black mb-3 ">دوستان</h1>
+                                <span class="border-my"></span>
+                            </div>
+
+                            <ul class="mt-4">
+                                <li class="mb-5">
+                                    <div class="author flex items-center">
+                                        <a href="#"
+                                            class=" bg-my-3 cal relative bottom-0 hover:bottom-1 transition-all rounded-full md:w-9 md:h-9 w-8 h-8  md:text-xl text-base text-white flex justify-center items-center">ع</a>
+                                        <a href="#" class="text-my-2 text-base transition-all hover:font-black	 mx-2">علی سورنا</a>
+
+                                    </div>
+                                </li>
+                                <li class="mb-5">
+                                    <div class="author flex items-center">
+                                        <a href="#"
+                                            class=" bg-my-3 cal relative bottom-0 hover:bottom-1 transition-all rounded-full md:w-9 md:h-9 w-8 h-8  md:text-xl text-base text-white flex justify-center items-center">ع</a>
+                                        <a href="#" class="text-my-2 text-base transition-all hover:font-black	 mx-2">فرشاد</a>
+
+                                    </div>
+                                </li>          <li class="mb-5">
+                                    <div class="author flex items-center">
+                                        <a href="#"
+                                            class=" bg-my-3 cal relative bottom-0 hover:bottom-1 transition-all rounded-full md:w-9 md:h-9 w-8 h-8  md:text-xl text-base text-white flex justify-center items-center">ع</a>
+                                        <a href="#" class="text-my-2 text-base transition-all hover:font-black	 mx-2">پیشرو</a>
+
+                                    </div>
+                                </li>          <li class="mb-5">
+                                    <div class="author flex items-center">
+                                        <a href="#"
+                                            class=" bg-my-3 cal relative bottom-0 hover:bottom-1 transition-all rounded-full md:w-9 md:h-9 w-8 h-8  md:text-xl text-base text-white flex justify-center items-center">ع</a>
+                                        <a href="#" class="text-my-2 text-base transition-all hover:font-black	 mx-2">سروش هیچکس</a>
+
+                                    </div>
+                                </li>
+                                <li class="mb-5">
+                                    <div class="author flex items-center">
+                                        <a href="#"
+                                            class=" bg-my-3 cal relative bottom-0 hover:bottom-1 transition-all rounded-full md:w-9 md:h-9 w-8 h-8  md:text-xl text-base text-white flex justify-center items-center">ع</a>
+                                        <a href="#" class="text-my-2 text-base transition-all hover:font-black	 mx-2">سروش</a>
+
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="relative mt-10">
+                            <div class="header-aside flex items-center ">
+                                <h1 class="md:text-2xl text-xl text-my-2 font-black  ">آرشیو</h1>
+                                <span class="border-my"></span>
+                            </div>
+
+                            <ul class="mt-5 archive">
+                                <li class=" mr-2 my-2	">
+                                    <a href="#" class="text-my-2 text-15 md:text-base  transition-all hover:text-my-3 ">شهریور 1399</a>
+                                </li>
+                                <li class=" mr-2 my-2	">
+                                    <a href="#" class="md:text-base text-15 text-my-2">مرداد 1399</a>
+                                </li>
+                                <li class=" mr-2 my-2	">
+                                    <a href="#" class="md:text-base text-15 text-my-2 ">شهریور 1399</a>
+                                </li>    <li class=" mr-2 my-2	">
+                                    <a href="#" class="text-my-2 md:text-base text-15 transition-all hover:text-my-3 ">شهریور 1399</a>
+                                </li>
+                                <li class=" mr-2 my-2	">
+                                    <a href="#" class="md:text-base text-15 text-my-2">مرداد 1399</a>
+                                </li>
+                                <li class=" mr-2 my-2	">
+                                    <a href="#" class="md:text-base text-15 text-my-2 ">شهریور 1399</a>
+                                </li>    <li class=" mr-2 my-2	">
+                                    <a href="#" class="text-my-2 md:text-base text-15 transition-all hover:text-my-3 ">شهریور 1399</a>
+                                </li>
+                                <li class=" mr-2 my-2	">
+                                    <a href="#" class="md:text-base text-15 text-my-2">مرداد 1399</a>
+                                </li>
+                                <li class=" mr-2 my-2	">
+                                    <a href="#" class="md:text-base text-15 text-my-2 ">شهریور 1399</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="relative mt-10">
+                            <div class="header-aside flex items-center ">
+                                <h1 class="md:text-2xl text-xl text-my-2 font-black  ">ابزارها</h1>
+                                <span class="border-my"></span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="flex justify-between md:flex-nowrap flex-wrap items-baseline mt-8  h-full">
+                <div class="lg:w-1/3  h-auto mx-2 h-auto ">
+                    <div class="header-aside flex items-center mb-5  ">
+                        <h1 class="md:text-2xl text-xl	 text-my-2 font-black ">درباره من</h1>
+                        <span class="border-my"></span>
+                    </div>
+                    <div class="flex items-center  ">
+                        <a href="#"
+                            class=" bg-my-3 rounded-full w-16 h-16 hover:bottom-2 bottom-0 relative transition-all  text-2xl text-white flex justify-center items-center">ع</a>
+                        <div class="autoh mr-3">
+                            <h4><a href="#" class="font-black text-my-2 text-lg">علیرضا کشاورز</a></h4>
+                            <span class="text-sm text-my-5">نوشته های یک برنامه نویس خسته</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-my-5 mt-4 mr-3  " styline-hle="eight:28px">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. 
+                    </p>
+                </div>
+                <div class="lg:w-1/3 mt-6 lg:mt-0  mx-2 h-auto ">
+                    <div class="header-aside flex items-center mb-3 ">
+                        <h1 class="md:text-2xl text-xl text-my-2 font-black ">برچسب</h1>
+                        <span class="border-my"></span>
+                    </div>
+                    <div class="flex items-center random-c  flex-wrap">
+                        <a href="#" class="p-2 m-2 bg-white text-15 relative bottom-0 hover:bottom-2 transition-all shadow-2xl text-my-1 ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white text-15 relative bottom-0 hover:bottom-2 transition-all shadow-2xl text-my-1 ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white text-15 relative bottom-0 hover:bottom-2 transition-all shadow-2xl text-my-1 ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white text-15 relative bottom-0 hover:bottom-2 transition-all shadow-2xl text-my-1 ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white text-15 relative bottom-0 hover:bottom-2 transition-all shadow-2xl text-my-1 ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white text-15 relative bottom-0 hover:bottom-2 transition-all shadow-2xl text-my-1 ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white text-15 relative bottom-0 hover:bottom-2 transition-all shadow-2xl text-my-1 ">برچسپ</a>
+
+
+                    </div>
+                </div>
+                <div class="lg:w-1/3 mt-6 lg:mt-0  h-auto mx-2">
+                    <div class="header-aside flex items-center mb-3 ">
+                        <h1 class=" md:text-2xl text-xl text-my-2 font-black mb-3 ">آرشیو هفتگی</h1>
+                        <span class="border-my"></span>
+                    </div>
+                    <div class="flex random-c items-center flex-wrap">                        <a href="#" class="p-2 m-2 bg-white  text-15 shadow-2xl text-my-1 relative bottom-0 hover:bottom-2 transition-all ">برچسپ</a>
+
+                        <a href="#" class="p-2 m-2 bg-white  text-15 shadow-2xl text-my-1 relative bottom-0 hover:bottom-2 transition-all ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white  text-15 shadow-2xl text-my-1 relative bottom-0 hover:bottom-2 transition-all ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white  text-15 shadow-2xl text-my-1 relative bottom-0 hover:bottom-2 transition-all ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white  text-15 shadow-2xl text-my-1 relative bottom-0 hover:bottom-2 transition-all ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white  text-15 shadow-2xl text-my-1 relative bottom-0 hover:bottom-2 transition-all ">برچسپ</a>
+                        <a href="#" class="p-2 m-2 bg-white  text-15 shadow-2xl text-my-1 relative bottom-0 hover:bottom-2 transition-all ">برچسپ</a>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class=" lg:my-[60px] my-10  flex justify-center w-full  ">
+                <div class="text-center">
+                 <a href="#" class="hover:bottom-2 bottom-0 relative transition-all">
+                    <h1 id="test" class="lg:text-6xl md:text-4xl text-3xl  title text-my-1 font-black">عشق ما</h1>
+                 </a>   
+                    <span class="text-sm text-my-5 text-center mt-6 block"> طراحی شده توسط <a href="#" class="font-black hover:text-my-3">آقای
+                            کاف </a></span>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // 
+        let colors = ["#ff486a", "#86efac", "#2563eb", "#ff991a", "#a1a09f", "#43a7e1", " #e3308b", " #dbbe2e", " #2edb53", "#db2e7e", "#9866a1", "#86efac"
+            , "#43a7e1", "#ff486a", "#ff991a", "#2563eb", "#a1a09f", "#e3308b", "#db2e7e", "#ff486a","#43a7e1", "#ff486a", "#ff991a", "#2563eb", "#a1a09f", "#e3308b", "#db2e7e", "#ff486a"];
+    //  Post
+           
+            if(document.querySelectorAll('.post>.header>.ites')){
+                let counter = 0;
+                myelements = document.querySelectorAll('.post>.header>.ites');
+        myelements.forEach(element => {
+       
+            element.style.background = colors[counter]
+            counter = (counter + 1 >= colors.length) ? 0 : counter += 1
+        });
+            }
+    
+        // Hshtag footer
+        if(document.querySelectorAll('.random-c .text-my-1')){
+            let counter2 = 0;
+        myelements = document.querySelectorAll('.random-c .text-my-1');
+        myelements.forEach(element => {
+            let text = element.innerHTML;
+            x=colors[counter2];
+            element.innerHTML = `<span style=color:${x}> #</span>` + text;
+            counter2 = (counter2 + 1 >= colors.length) ? 0 : counter2 += 1
+        });
+        }
+   
+// lates Post
+if(document.querySelectorAll('.body-aside>.item>.ites')){
+    let counter12 = 0;
+        myelements = document.querySelectorAll('.body-aside>.item>.ites');
+        myelements.forEach(element => {
+            element.style.background = colors[counter12]
+            counter12 = (counter12 + 1 >= colors.length) ? 0 : counter12 += 1
+        });
+}
+
+// frinds
+if(document.querySelectorAll('.author>.cal')){
+    let counter4 = 7;
+        myelements = document.querySelectorAll('.author>.cal');
+        myelements.forEach(element => {
+        element.innerHTML= element.nextSibling.nextSibling.innerHTML.charAt(0);
+        
+            element.style.background = colors[counter4]
+            counter4 = (counter4 + 1 >= colors.length) ? 0 : counter4 += 1
+        });
+}
+// posts
+    if(document.querySelectorAll('.post')){
+        post=document.querySelectorAll('.post');
+post.forEach(element=>{
+x=element.querySelector(".tit").innerHTML.charAt(0);
+element.querySelector('.ites').innerHTML=x
+if(element.querySelector('.aut')){
+    element.querySelector('.aut').previousElementSibling.innerHTML=element.querySelector('.aut').innerHTML.charAt(0)
+}
+
+});
+    }
+
+
+
+    //  document.getElementById("test").innerHTML="#"+
+    function Menu(e){
+      let menu=document.getElementById("menu");
+      let parent=document.getElementById('parent');
+      e.classList.toggle("change");
+      menu.classList.toggle("close")
+       
+    }
+    </script>
+</body>
+
+</html>

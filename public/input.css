@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family:iransans ;
+    src: url('../public/fonts/IRANSansWeb.ttf');
+}
+@font-face {
+    font-family:irUltraLight;
+    src: url('../public/fonts/IRANSansWeb_UltraLight.ttf');
+}
+@font-face {
+    font-family:irLight ;
+    src: url('../public/fonts/IRANSansWeb_Light.ttf');
+}
+@font-face {
+    font-family:irMedium ;
+    src: url('../public/fonts/IRANSansWeb_Medium.ttf');
+}
